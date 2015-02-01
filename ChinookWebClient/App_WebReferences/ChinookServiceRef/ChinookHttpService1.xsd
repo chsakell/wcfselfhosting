@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ChinookWcfService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ChinookWcfService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8090/ChinookHttpService?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfArtistDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArtistDTO" nillable="true" type="tns:ArtistDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArtistDTO" nillable="true" type="tns:ArrayOfArtistDTO" />
+  <xs:complexType name="ArtistDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArtistDTO" nillable="true" type="tns:ArtistDTO" />
+  <xs:complexType name="ArrayOfArtistAlbums">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArtistAlbums" nillable="true" type="tns:ArtistAlbums" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArtistAlbums" nillable="true" type="tns:ArrayOfArtistAlbums" />
+  <xs:complexType name="ArtistAlbums">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Albums" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArtistAlbums" nillable="true" type="tns:ArtistAlbums" />
+</xs:schema>

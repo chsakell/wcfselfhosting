@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="39051a84-87a8-4137-8475-ccd5dd11b3c9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8090/ChinookHttpService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ChinookHttpService.disco" MetadataType="Disco" ID="d1ff5895-8d38-4126-9b0f-b98f4372f17e" SourceId="1" SourceUrl="http://localhost:8090/ChinookHttpService?disco" />
+    <MetadataFile FileName="ChinookHttpService.xsd" MetadataType="Schema" ID="a4fa9c41-2d01-465e-93c6-76cb126764e8" SourceId="1" SourceUrl="http://localhost:8090/ChinookHttpService?xsd=xsd3" />
+    <MetadataFile FileName="ChinookHttpService1.xsd" MetadataType="Schema" ID="6631b4c4-cb31-4592-a577-a4beff78a513" SourceId="1" SourceUrl="http://localhost:8090/ChinookHttpService?xsd=xsd2" />
+    <MetadataFile FileName="ChinookHttpService2.xsd" MetadataType="Schema" ID="a1c55ffe-ff6f-44d7-a13f-2b72be0eed0c" SourceId="1" SourceUrl="http://localhost:8090/ChinookHttpService?xsd=xsd1" />
+    <MetadataFile FileName="ChinookHttpService3.xsd" MetadataType="Schema" ID="5f8527ba-e6fb-426f-bac6-69b727875cc5" SourceId="1" SourceUrl="http://localhost:8090/ChinookHttpService?xsd=xsd0" />
+    <MetadataFile FileName="ChinookService.wsdl" MetadataType="Wsdl" ID="8c25f7e7-5e1d-4934-a208-f1d76d1394a3" SourceId="1" SourceUrl="http://localhost:8090/ChinookHttpService?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
